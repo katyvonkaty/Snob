@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBox from "./components/SearchBox";
 import Header from "./components/Header";
+// eslint-disable-next-line
 import {index} from "./index.css"
 import yelp from "./api/yelp";
 
@@ -23,7 +24,7 @@ class App extends React.Component {
   onSearchSubmit = async (category, accessible) => {
     console.log(accessible);
     console.log(category);
-
+// eslint-disable-next-line
     const response = await yelp.get(`/search?term=${category}`, {
       params: {
         location: "new york city",
@@ -36,6 +37,7 @@ class App extends React.Component {
   };
 
   onRestaurantSelect = async (restaurant) => {
+    // eslint-disable-next-line
   const response  = await yelp.get(`/${restaurant.id}/reviews`)
         .then((response) => {
           this.setState({reviews: response.data.reviews})

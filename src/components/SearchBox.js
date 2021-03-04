@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
@@ -34,6 +34,7 @@ class SearchBox extends React.Component {
             <FormControlLabel
               value={this.state.accessible}
               checked={this.state.accessible === "reservation"}
+              // eslint-disable-next-line
               value="reservation"
               control=<Radio />
               onChange={this.handleChange}
@@ -43,6 +44,7 @@ class SearchBox extends React.Component {
             <FormControlLabel
               value={this.state.accessible}
               checked={this.state.accessible === "wheelchair_accessible"}
+              // eslint-disable-next-line
               value="wheelchair_accessible"
               control=<Radio />
               onChange={this.handleChange}
@@ -53,6 +55,7 @@ class SearchBox extends React.Component {
             <FormControlLabel
               value={this.state.accessible}
               checked={this.state.accessible === "hot_and_new"}
+              // eslint-disable-next-line
               value="hot_and_new"
               control=<Radio />
               onChange={this.handleChange}
