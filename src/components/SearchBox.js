@@ -28,21 +28,27 @@ class SearchBox extends React.Component {
   render() {
     return (
       <>
-        <FormControl component="fieldset" justify="center" onSubmit={this.onFormSubmit}>
-          <FormLabel component="legend">Snobby AND picky. We love to see it</FormLabel>
-          <RadioGroup row aria-label="params" name="params">
+        <FormControl
+          component="fieldset"
+          align="center"
+          onSubmit={this.onFormSubmit}
+          style={{textAlign:"center"}}
+        >
+          <FormLabel component="legend">
+            Get even pickier:
+          </FormLabel>
+          <RadioGroup style={{textAlign:"center"}} row aria-label="params" name="params">
             <FormControlLabel
-              value={this.state.accessible}
               checked={this.state.accessible === "reservation"}
               // eslint-disable-next-line
               value="reservation"
-              control=<Radio />
               onChange={this.handleChange}
-              label="reservation"
+
+              control=<Radio />
+              label="reservations accepted"
             />
 
             <FormControlLabel
-              value={this.state.accessible}
               checked={this.state.accessible === "wheelchair_accessible"}
               // eslint-disable-next-line
               value="wheelchair_accessible"
@@ -51,15 +57,24 @@ class SearchBox extends React.Component {
               label="wheelchair accessible"
             />
 
-
             <FormControlLabel
-              value={this.state.accessible}
               checked={this.state.accessible === "hot_and_new"}
               // eslint-disable-next-line
               value="hot_and_new"
               control=<Radio />
               onChange={this.handleChange}
               label="hot and new"
+            />
+
+
+
+            <FormControlLabel
+              checked={this.state.accessible === "deals"}
+              // eslint-disable-next-line
+              value="deals"
+              control=<Radio />
+              onChange={this.handleChange}
+              label="deals"
             />
           </RadioGroup>
         </FormControl>
