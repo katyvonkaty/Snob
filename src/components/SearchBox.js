@@ -35,7 +35,7 @@ class SearchBox extends React.Component {
         row
           component="fieldset"
           align="center"
-          justify="center" alignItems="center"
+          justify="center"
           onSubmit={this.onFormSubmit}
           style={{textAlign:"center"}}
         >
@@ -89,7 +89,7 @@ class SearchBox extends React.Component {
                       className="tf"
                       id="outlined-basic"
                       type="text"
-                      inputStyle={{ textAlign: "center" }}
+                      input="Submit"
                       style={{
                         width: "100%",
                         textAlign: "center",
@@ -99,6 +99,7 @@ class SearchBox extends React.Component {
                       size="large"
                       placeholder="what would you like?"
                       value={this.state.category}
+
                       onChange={(e) =>
                         this.setState({ category: e.target.value })
                       }

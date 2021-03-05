@@ -58,7 +58,7 @@ class App extends React.Component {
           <RestaurantDetail restaurant={this.state.selectedRestaurant} />
           <RestaurantReviews onRestaurantSelect= {this.onRestaurantSelect} reviews={this.state.reviews} />
           </Container>
-           <SearchBox onSubmit={this.onSearchSubmit} />
+           <SearchBox onSubmit={this.onSearchSubmit} style={{cursor:'pointer'}} />
 
           <p style={{textAlign:"center", padding:"30px"}}>Found: {this.state.restaurants.length} hits! </p>
         </Container>
