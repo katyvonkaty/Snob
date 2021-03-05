@@ -58,6 +58,11 @@ code {
     monospace;
 }
 
+.man {
+  width:100%;
+  margin-top:30px;
+}
+
 body {
   background: #f8fdfc !important;
 }
@@ -75,4 +80,37 @@ h4 {
 
 p {
   font-family: "Montserrat", sans-serif !important;
+}
+
+/* .MuiFormControl-root {
+  display:block !important;
+} */
+
+@media(max-width:992px){
+  .lady{
+    display:none;
+  }
+
+  .logo {
+    margin: auto !important;
+  }
+
+  .man {
+    width: 60% !important;
+margin-top: -40px;
+  }
+
+  .MuiGrid-container {
+    display:block !important;
+  }
+  .MuiFormGroup-root {
+    flex-direction: column !important;
+  }
+
+  .headerone {
+    width:80%;
+  }
+  .pone {
+    width:80%;
+  }
 }

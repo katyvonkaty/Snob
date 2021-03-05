@@ -14,7 +14,7 @@ const RestaurantReviews = ({reviews, onRestaurantSelect}) => {
 
   return(
     <>
-    <Grid spacing={2} container justify="center" alignItems="center">
+    <Grid spacing={2} container style={{marginTop:"20px"}} justify="center" alignItems="center">
         {renderedList}
     </Grid>
     </>

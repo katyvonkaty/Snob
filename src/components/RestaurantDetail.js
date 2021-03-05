@@ -7,9 +7,9 @@ const RestaurantDetail = ({restaurant}) => {
 
   return (
     <div>
-    <h1> {restaurant.name}</h1>
-    <p> {restaurant.review_count} </p>
-    <a href={restaurant.url} rel="noreferrer" target="_blank">Visit {restaurant.name} Website </a>
+
+    <h1> <b> {restaurant.name} </b> Reviews</h1>
+    <a href={restaurant.url} rel="noreferrer" target="_blank" style={{marginBottom:"20px"}}>Visit {restaurant.name} Website </a>
     </div>
   )
 

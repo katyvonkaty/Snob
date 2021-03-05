@@ -28,16 +28,22 @@ class SearchBox extends React.Component {
   render() {
     return (
       <>
+
+
+        <Container maxWidth="sm">
         <FormControl
+        row
           component="fieldset"
           align="center"
+          justify="center" alignItems="center"
           onSubmit={this.onFormSubmit}
           style={{textAlign:"center"}}
         >
           <FormLabel component="legend">
             Get even pickier:
           </FormLabel>
-          <RadioGroup style={{textAlign:"center"}} row aria-label="params" name="params">
+
+          <RadioGroup row aria-label="params" name="params">
             <FormControlLabel
               checked={this.state.accessible === "reservation"}
               // eslint-disable-next-line
@@ -68,24 +74,14 @@ class SearchBox extends React.Component {
 
 
 
-            <FormControlLabel
-              checked={this.state.accessible === "deals"}
-              // eslint-disable-next-line
-              value="deals"
-              control=<Radio />
-              onChange={this.handleChange}
-              label="deals"
-            />
           </RadioGroup>
         </FormControl>
-
-        <Container maxWidth="sm">
           <Grid container alignItems="center" justifyContent="center">
             <Grid item xs={16} sm={12}>
               <form
                 autocomplete="off"
                 onSubmit={this.onFormSubmit}
-                stlye={{ textAlign: "center" }}
+                style={{ textAlign: "center", marginTop:"30px" }}
               >
                 <div className="field">
                   <div className="text center">
