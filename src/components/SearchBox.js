@@ -94,6 +94,7 @@ class SearchBox extends React.Component {
                         width: "100%",
                         textAlign: "center",
                         margin: "auto",
+                        cursor:'pointer'
                       }}
                       size="large"
                       placeholder="what would you like?"
