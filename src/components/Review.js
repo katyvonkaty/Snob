@@ -29,7 +29,6 @@ const Review = ({review, onRestaurantSelect}) => {
       </CardContent>
       <CardActions>
 
-        <img src={review.profile_url} alt="profile"/>
       </CardActions>
     </Card>
     </Grid>

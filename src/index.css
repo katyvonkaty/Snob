@@ -82,6 +82,10 @@ p {
   font-family: "Montserrat", sans-serif !important;
 }
 
+.MuiGrid-align-items-xs-center {
+  align-items: stretch !important;
+}
+
 /* .MuiFormControl-root {
   display:block !important;
 } */
@@ -100,12 +104,20 @@ p {
 margin-top: -40px;
   }
 
-  .MuiGrid-container {
+
+  .MuiGrid-align-items-xs-center {
+    align-items: stretch !important;
+  }
+
+  .MuiGrid-container .images {
     display:block !important;
   }
+
   .MuiFormGroup-root {
     flex-direction: column !important;
   }
+
+
 
   .headerone {
     width:80%;

@@ -48,7 +48,9 @@ class App extends React.Component {
   render() {
     return (
       <>
+        <Container maxWidth="lg" images>
       <Header />
+      </Container>
 
         <Container maxWidth="lg">
           <h1 style={{marginBottom:"50px", textAlign:"center"}}> Restos </h1>

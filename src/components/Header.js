@@ -15,7 +15,7 @@ const Header = () => {
         <Grid align="center" item xs={12} sm={8} md={4} >
           <img src={logo} alt="logo" className="logo" style={{width:"40%", margin:"0 auto", display:"block", marginBottom:"30px", marginTop:"110px"}}/>
           <h1 className="headerone">Let Your Stuck up Ass Shine!  </h1>
-          <p className="pone"> Authenticity is at the core of our vibrant culture, which inspires us to be the most successful versions of ourselves. From the moment you step foot into a Yelp office, you'll feel what it means to challenge the status quo.  </p>
+          <p className="pone"> Starsnob is the app that celebrates the elite yelp restaurants. In an effort to streamline our lives, the brilliant minds at starsnob thought there was a market for such an app; and they were right! Search your craving and indulge in your snobbery.  </p>
         </Grid>
         <Grid item xs={12} sm={8} md={4}>
           <img src={guy} className="man" alt="cute guy" style={{width:"100%"}}/>
