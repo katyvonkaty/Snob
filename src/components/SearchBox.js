@@ -72,8 +72,6 @@ class SearchBox extends React.Component {
               label="hot and new"
             />
 
-
-
           </RadioGroup>
         </FormControl>
           <Grid container alignItems="center" justifyContent="center">
@@ -105,6 +103,7 @@ class SearchBox extends React.Component {
                       }
                       label="Feed your snobby ass"
                       variant="outlined"
+
                     />
                   </div>
                 </div>
