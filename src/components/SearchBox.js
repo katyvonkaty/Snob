@@ -95,13 +95,12 @@ class SearchBox extends React.Component {
                         cursor:'pointer'
                       }}
                       size="large"
-                      placeholder="what would you like?"
                       value={this.state.category}
 
                       onChange={(e) =>
                         this.setState({ category: e.target.value })
                       }
-                      label="Feed your snobby ass"
+                      label="What Are You Snobby About?"
                       variant="outlined"
 
                     />
