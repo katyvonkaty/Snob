@@ -126,3 +126,9 @@ margin-top: -40px;
     width:80%;
   }
 }
+
+@media(max-width:992px){
+  .testing {
+    width:200% !important;
+  }
+}

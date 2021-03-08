@@ -21,13 +21,14 @@ class App extends React.Component {
   };
 
 
-  onSearchSubmit = async (category, accessible) => {
+  onSearchSubmit = async (category, accessible,location) => {
     console.log(accessible);
     console.log(category);
+    console.log(location)
 // eslint-disable-next-line
     const response = await yelp.get(`/search?term=${category}`, {
       params: {
-        location: "new york city",
+        location: `${location}`,
         rating: "4.5",
         limit:"9",
         attributes: `${accessible}`
